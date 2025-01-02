@@ -1,3 +1,9 @@
+// Introdução
+// Nesta atividade vamos desenvolver as funcionalidades de um caixa eletrônico, a partir das informações de um cliente.
+// Nós sabemos que um caixa eletrônico, possui algumas responsabilidades, como: saque, saldo, depósito, entre outros...
+// Agora, vamos manipular informações de um objeto para realizar algumas destas ações.
+// Dado o objeto:
+
 const user = {
     name: "Jhon Doyle Fox",
     savingsBalance: 500,
@@ -15,11 +21,32 @@ const user = {
     // O cliente deve primeiro inserir no prompt o número da funcionalidade desejada,
     // sendo 1 para saldo, 2 para depósito ou 3 para saque.
 
+    //     Estruturando as funcionalidades
+    // 1) Saldo
+    // Desenvolva uma função chamada getBalance. 
+    // Esta função irá receber como parâmetro o tipo da conta e o usuário. 
+    // A função deverá retornar o saldo disponível.
+
+    // 2) Depósito 
+    // Desenvolva uma função chamada makeDeposit. 
+    // Esta função deve receber como parâmetro o usuário e o valor a ser depositado.
+    // Os depósitos são incrementados no saldo da poupança.
+
+    // 3) Saque
+    // Desenvolva uma função chamada makeWithdrawal. O objetivo principal da função é possibilitar
+    // ao cliente que ele faça retiradas em sua conta. Essa função recebe três parâmetros: 
+    // um objeto do tipo user, o valor a ser sacado e o tipo da conta.
+    // O cliente pode escolher sacar da poupança ou do limite de crédito que o banco disponibilizou. 
+    // Além disso, a função não deve permitir a entrada de valores negativos e não se pode realizar saques abaixo de R$ 5,00.
+    // O caixa não realiza saques de valores com casa flutuante.
+    // Caso o valor solicitado para saque não esteja disponível na conta, retorne "Saldo insuficiente".
+
     //criando caixa de seleção
     //let serviceArr = [1,2,3];
     let serviceChoice = parseInt(prompt(" Selecione a opção desejada:\n 1)Função Saldo\n 2)Função Depósito\n 3)Função Saque"));
     
     if (serviceChoice ==1){
+        
     //1) função saldo
 
 let responseBalance = prompt(" Digite 1 para saldo da poupança\n Digite 2 para saldo em crédito");
